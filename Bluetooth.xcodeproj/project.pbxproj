@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512AF0291A62F8AC00A2DD41 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF0281A62F8AC00A2DD41 /* Device.swift */; };
+		512AF02D1A6316EB00A2DD41 /* BTLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AF02C1A6316EB00A2DD41 /* BTLE.swift */; };
 		515DA2A31A59C735007668B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DA2A21A59C735007668B0 /* AppDelegate.swift */; };
 		515DA2A51A59C735007668B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DA2A41A59C735007668B0 /* ViewController.swift */; };
 		515DA2A81A59C735007668B0 /* Bluetooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 515DA2A61A59C735007668B0 /* Bluetooth.xcdatamodeld */; };
 		515DA2AA1A59C735007668B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515DA2A91A59C735007668B0 /* Images.xcassets */; };
 		515DA2AD1A59C735007668B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515DA2AB1A59C735007668B0 /* Main.storyboard */; };
 		515DA2B91A59C735007668B0 /* BluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DA2B81A59C735007668B0 /* BluetoothTests.swift */; };
+		515DA2C61A59C884007668B0 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DA2C51A59C884007668B0 /* IOBluetooth.framework */; };
+		515DA2C81A59CD4D007668B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DA2C71A59CD4D007668B0 /* Foundation.framework */; };
+		515DA2CA1A59D8E8007668B0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DA2C91A59D8E8007668B0 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		512AF0281A62F8AC00A2DD41 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		512AF02C1A6316EB00A2DD41 /* BTLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLE.swift; sourceTree = "<group>"; };
 		515DA29D1A59C735007668B0 /* Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515DA2A11A59C735007668B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515DA2A21A59C735007668B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		515DA2B21A59C735007668B0 /* BluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515DA2B71A59C735007668B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515DA2B81A59C735007668B0 /* BluetoothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTests.swift; sourceTree = "<group>"; };
+		515DA2C51A59C884007668B0 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		515DA2C71A59CD4D007668B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		515DA2C91A59D8E8007668B0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515DA2CA1A59D8E8007668B0 /* CoreBluetooth.framework in Frameworks */,
+				515DA2C81A59CD4D007668B0 /* Foundation.framework in Frameworks */,
+				515DA2C61A59C884007668B0 /* IOBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +75,7 @@
 				515DA29F1A59C735007668B0 /* Bluetooth */,
 				515DA2B51A59C735007668B0 /* BluetoothTests */,
 				515DA29E1A59C735007668B0 /* Products */,
+				515DA2C41A59C84C007668B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,8 @@
 			children = (
 				515DA2A21A59C735007668B0 /* AppDelegate.swift */,
 				515DA2A41A59C735007668B0 /* ViewController.swift */,
+				512AF02C1A6316EB00A2DD41 /* BTLE.swift */,
+				512AF0281A62F8AC00A2DD41 /* Device.swift */,
 				515DA2A91A59C735007668B0 /* Images.xcassets */,
 				515DA2AB1A59C735007668B0 /* Main.storyboard */,
 				515DA2A61A59C735007668B0 /* Bluetooth.xcdatamodeld */,
@@ -110,6 +126,16 @@
 				515DA2B71A59C735007668B0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		515DA2C41A59C84C007668B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515DA2C91A59D8E8007668B0 /* CoreBluetooth.framework */,
+				515DA2C71A59CD4D007668B0 /* Foundation.framework */,
+				515DA2C51A59C884007668B0 /* IOBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +239,9 @@
 			files = (
 				515DA2A51A59C735007668B0 /* ViewController.swift in Sources */,
 				515DA2A81A59C735007668B0 /* Bluetooth.xcdatamodeld in Sources */,
+				512AF02D1A6316EB00A2DD41 /* BTLE.swift in Sources */,
 				515DA2A31A59C735007668B0 /* AppDelegate.swift in Sources */,
+				512AF0291A62F8AC00A2DD41 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +429,7 @@
 				515DA2BE1A59C735007668B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515DA2BF1A59C735007668B0 /* Build configuration list for PBXNativeTarget "BluetoothTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +438,7 @@
 				515DA2C11A59C735007668B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
